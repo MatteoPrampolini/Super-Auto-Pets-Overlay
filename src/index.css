@@ -1,0 +1,69 @@
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@font-face {
+  font-family: "Lapsus Pro";
+  src: url("../src/fonts/LapsusPro-Bold.otf") format("opentype");
+}
+
+body {
+  font-family: "Lapsus Pro";
+  margin:0;
+  padding:0;
+  background-color: transparent !important;
+  overflow-y: hidden;
+  zoom: 1.2;
+}
+#upper-container{
+  display: flex;
+}
+.settings_div{
+  margin-left: 180px !important;
+  display: flex;
+}
+
+#close:hover{
+  color: white;
+}
+.dragme{
+  -webkit-app-region: drag;
+  margin: 0;
+  margin-top: 7px;
+  text-align: center;
+  font-size: 30px;
+  color:white;
+}
+.upper-element{
+  margin-left: 10px;
+  margin-top: 6px;
+  -webkit-app-region: no-drag;
+  height:30px;
+  background-color: white;
+
+}
+.white-border{
+  border-color: white !important;
+  border-style: solid !important;
+  border-radius: 7px;
+  border-width: 2px;
+}
+.button-inside{
+  font-family: "Lapsus Pro";
+  color: #4f2105;
+  background-color: #fe6a00;
+  height:30px;
+  border-color: black !important;
+  border-style: solid !important;
+  border-radius: 7px;
+  border-width: 3px;
+}
+.button-inside:hover{
+  color: #e6e6e6;
+}
+.fa-sliders{
+  width:30px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 20px !important;
+  padding-top: 4px !important;
+  text-align: center;
+  font-family: "Font Awesome 6 Free" !important;
+}
