@@ -3,14 +3,45 @@
   font-family: "Lapsus Pro";
   src: url("../src/fonts/LapsusPro-Bold.otf") format("opentype");
 }
-
+#windows-container{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border:2px solid yellowgreen;
+}
+#settings-window{
+  height:180px;
+  width:260px;
+  margin-left: 75px;
+}
+#animals-window{
+  height:180px;
+  width:180px;
+}
+#food-window{
+  height:150px;
+  width:150px;
+  margin-left: 20px;
+}
+.window{
+  opacity: 0.9;
+  font-family: "Lapsus Pro";
+  color: #4f2105;
+  background-color: #fe6a00;
+  border-color: black !important;
+  border-style: solid !important;
+  border-radius: 7px;
+  border-width: 3px;
+}
 body {
+  width:100%;
+  height:100%;
+  border:2px solid salmon;
   font-family: "Lapsus Pro";
   margin:0;
   padding:0;
   background-color: transparent !important;
-  overflow-y: hidden;
-  zoom: 1.2;
+  overflow: hidden; 
 }
 #upper-container{
   display: flex;
@@ -59,6 +90,7 @@ body {
   color: #e6e6e6;
 }
 .fa-sliders{
+  pointer-events: all; cursor:pointer;
   width:30px !important;
   margin: 0px !important;
   padding: 0px !important;
