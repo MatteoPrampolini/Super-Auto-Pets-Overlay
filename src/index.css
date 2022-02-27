@@ -3,6 +3,202 @@
   font-family: "Lapsus Pro";
   src: url("../src/fonts/LapsusPro-Bold.otf") format("opentype");
 }
+.foods-row> img{
+  background-image:url('https://raw.githubusercontent.com/bencoveney/super-auto-pets-db/main/docs/assets/battleback5.webp') !important;
+}
+.food-turn-row > span{
+  height:18px !important;
+  display:table-cell;
+  vertical-align:middle;
+}
+.food-turn-row:last-child{
+  border-bottom: 0px solid;
+}
+span{
+  height: 100%;
+}
+.foods-row{
+  
+  margin-right: 5px;
+  height: 100%;
+  width:90px;
+  display:table-cell;
+  vertical-align:middle;
+  margin-left: 15px;
+  padding-top: 1px;
+}
+.food-turn-row{
+  display:table;
+  display: block !important;
+  width:100%;
+  height:16%;
+  font-size: 15px;
+  border-bottom: 1px solid var(--darker-orange);
+  position: relative;
+}
+#subtitle{
+  width:100%;
+  height:15px;
+  font-size: 13px !important;
+  margin: 0px;
+  margin-top: 2px;
+  margin-left: 2px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--darker-orange);
+}
+.thick{
+  font-weight: 700;
+}
+.ability-lvl{
+  margin-top: 5px;
+  width:100%;
+  white-space: normal;
+  font-size: 9px;
+}
+#pet-card{
+  width:100%;
+  border: 2px solid black;
+  display: flex;
+  height: 85%;
+}
+.fa-arrow-circle-right{
+  border:2px solid black !important;
+  border-radius: 50%;
+
+}
+#calc-btn-animal{
+  font-size: 26px !important;
+  position: absolute;
+  top:60%;
+  left:15px;
+  height:30px !important;
+  width:30px !important;
+  background-color: var(--bright-orange);
+  border:1px solid var(--kinda-white);
+  border-radius: 50%;
+  border-width: 2px;
+  color: #fcbb7e;
+  
+}
+#abilities{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 10px !important;
+  width:60%;
+  margin-left: 10px;
+  height: 100%;
+}
+#stats{
+  width:55px;
+  height: 20px;
+  margin: 0 !important;
+  padding: 0 !important;
+  clear:both;
+}
+#stats-span{
+  font-size: 8.5px;
+  height: 100%;
+  vertical-align: text-top;
+  text-align: center;
+  margin-left: 3px;
+  white-space:nowrap;
+}
+img{
+  border: 1px solid var(--darker-orange);
+   background-image:url('https://raw.githubusercontent.com/bencoveney/super-auto-pets-db/main/docs/assets/battleback1-2.webp');
+  background-size: cover;
+  float:right;
+}
+:root {
+  --bright-orange:#fe6a00;
+  --darker-orange:#4f2105;
+  --kinda-white: #e6e6e6;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 0.7; /* Firefox */
+}
+#search-animal{
+  font-family: "Lapsus Pro";
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-color: transparent;
+  width: 95% !important;
+  height: 20px;
+  margin-top:3px;
+  background-color: transparent;
+  color: black;
+}
+#search-animal:focus{
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-color: transparent;
+
+}
+#restart_label{
+  left: 200px !important;
+  height: 20px !important;
+  white-space: normal;
+  text-align: center !important;
+  vertical-align:middle !important;
+  font-size: 15px !important;
+}
+#zoom-rate{
+  padding-top: 2px;
+  color: var(--darker-orange);
+  border-color:var(--darker-orange);
+  left:185px !important;
+  border-radius: 3px;
+  width:20px;
+  height:20px;
+  text-align: center !important;
+  vertical-align:middle !important;
+  font-size: 15px !important;
+  border: 2px solid  var(--darker-orange) !important;
+
+}
+.slider {
+  -webkit-appearance: none;
+  width: 40%;
+  height: 15px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+  left:65px !important;
+  border: 2px solid  var(--darker-orange) !important;
+   
+}
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: var(--darker-orange);
+  cursor: pointer;
+  border-radius: 3px; 
+}
+
+.row{
+  display: block !important;
+  width:100%;
+  height:30px;
+  border: 1px solid black;
+  position: relative;
+}
+.row >*{
+  margin: 0;
+  padding:0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left:5px;
+}
 #windows-container{
   display: flex;
   width: 100%;
@@ -26,8 +222,8 @@
 .window{
   opacity: 0.9;
   font-family: "Lapsus Pro";
-  color: #4f2105;
-  background-color: #fe6a00;
+  color: var(--darker-orange);
+  background-color:  var(--bright-orange);
   border-color: black !important;
   border-style: solid !important;
   border-radius: 7px;
@@ -78,8 +274,8 @@ body {
 }
 .button-inside{
   font-family: "Lapsus Pro";
-  color: #4f2105;
-  background-color: #fe6a00;
+  color: var(--darker-orange);
+  background-color: var(--bright-orange);
   height:30px;
   border-color: black !important;
   border-style: solid !important;
