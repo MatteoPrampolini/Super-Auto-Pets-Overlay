@@ -1,7 +1,7 @@
 const path = require('path');
 window.$ = window.jQuery = require('jquery');
-var nodeConsole = require('console'); //debug
-var myConsole = new nodeConsole.Console(process.stdout, process.stderr); //debug
+//var nodeConsole = require('console'); //debug
+//var myConsole = new nodeConsole.Console(process.stdout, process.stderr); //debug
 var fs = require('fs');
 var API=undefined;
 var settings=undefined;

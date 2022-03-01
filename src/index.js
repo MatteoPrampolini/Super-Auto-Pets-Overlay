@@ -1,8 +1,8 @@
 const electron = require("electron");
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-var nodeConsole = require('console'); //debug
-var myConsole = new nodeConsole.Console(process.stdout, process.stderr); //debug
+//var nodeConsole = require('console'); //debug
+//var myConsole = new nodeConsole.Console(process.stdout, process.stderr); //debug
 
 var fs = require('fs');
 var settings = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'settings.json'), 'utf8'));
@@ -34,7 +34,7 @@ const createWindow = () => {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true,
-      devTools: true
+      devTools: false
       }
   });
 
