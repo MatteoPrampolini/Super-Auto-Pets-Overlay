@@ -1,4 +1,5 @@
 # Super-Auto-Pets-Overlay
 An overlay for super auto pets
 
-Work In progress
+
+API used: https://github.com/bencoveney/super-auto-pets-db
