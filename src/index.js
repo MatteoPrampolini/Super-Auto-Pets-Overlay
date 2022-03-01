@@ -17,10 +17,8 @@ const createWindow = () => {
 
 
   // Create the browser window.
-  //let h=246;
-  //let w=440;
-  let h=300*settings.scale;
-  let w=520*settings.scale;
+  let h=275*settings.scale;
+  let w=330*settings.scale;
   var mainWindow = new BrowserWindow({
 
     width:w,

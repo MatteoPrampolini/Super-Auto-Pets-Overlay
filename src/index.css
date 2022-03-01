@@ -3,6 +3,80 @@
   font-family: "Lapsus Pro";
   src: url("../src/fonts/LapsusPro-Bold.otf") format("opentype");
 }
+:root {
+  --bright-orange:#fe6a00;
+  --darker-orange:#4f2105;
+  --kinda-white: #e6e6e6;
+  --pinky: #fcbb7e;
+}
+#pack-standard{
+  margin-left: 20px;
+  background-image: url("https://raw.githubusercontent.com/bencoveney/super-auto-pets-db/main/docs/assets/pet-turtle.svg");
+}
+#pack-expansion1{
+  margin-left: 10px;
+  background-image: url("https://raw.githubusercontent.com/bencoveney/super-auto-pets-db/main/docs/assets/pet-dog.svg");
+  
+}
+#select-pack{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+}
+.pack{
+  transform: scale(0.7);
+  width:100px;
+  height: 100px;
+  border: 2px solid var(--darker-orange);
+  border-radius: 3px;
+  background-size: cover;
+  text-align: center;
+}
+.pack:hover{
+  cursor: pointer;
+}
+.pack > p{
+  position: relative;
+  top:90%;
+  border: 2px solid var(--darker-orange);
+  border-width: 2px;
+}
+.selected{
+  background-color: var(--kinda-white);
+}
+
+.calculate-elements{
+  /* margin-top: 5px; */
+  /* width:80%; */
+  white-space: normal;
+  font-size: 12px;
+}
+.smaller-text{
+  font-size: 10px;
+}
+.smallest-text{
+  font-size: 8px;
+  line-height: 1.6;
+}
+#selected-animal{
+  font-weight: 700;
+  /* margin-left: 10px; */
+  font-size: 10px;
+  display: inline !important;
+  overflow: hidden; white-space: nowrap;
+}
+#selected-gold,#selected-turns,#selected-slots,#selected-animal-slots{
+  /* margin-left: 10px; */
+  width:30px;
+  font-size: 12px;
+  height: 10px;
+}
+/* #selected-turn{
+  margin-left: 11px;
+} */
+#selected-slots,#selected-animal-slots{
+  width: 23px;
+}
 .foods-row> img{
   background-image:url('https://raw.githubusercontent.com/bencoveney/super-auto-pets-db/main/docs/assets/battleback5.webp') !important;
 }
@@ -18,8 +92,7 @@ span{
   height: 100%;
 }
 .foods-row{
-  
-  margin-right: 5px;
+  padding-left: 20px;
   height: 100%;
   width:90px;
   display:table-cell;
@@ -36,7 +109,7 @@ span{
   border-bottom: 1px solid var(--darker-orange);
   position: relative;
 }
-#subtitle{
+.subtitle{
   width:100%;
   height:15px;
   font-size: 13px !important;
@@ -49,6 +122,7 @@ span{
 .thick{
   font-weight: 700;
 }
+
 .ability-lvl{
   margin-top: 5px;
   width:100%;
@@ -60,27 +134,52 @@ span{
   border: 2px solid black;
   display: flex;
   height: 85%;
+  border-right: 0px solid black;
 }
-.fa-arrow-circle-right{
+.fa-arrow-circle-right,.fa-arrow-circle-left{
   border:2px solid black !important;
   border-radius: 50%;
 
 }
-#calc-btn-animal{
-  font-size: 26px !important;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#probability-lbl{
+  font-size: 10px !important;
   position: absolute;
-  top:60%;
-  left:15px;
-  height:30px !important;
-  width:30px !important;
+  top:168px;
+  left:87px;  
+  color: black;
+  font-family: "Lapsus Pro" !important;
+  border: 2px solid var(--darker-orange);
+  border-radius: 3px;
+  padding: 2px 5px 5px 2px;
+  background-color: var(--pinky) !important;
+}
+#calc-btn-animal{
+  font-size: 41px !important;
+  position: absolute;
+  top:150px;
+  left:11px;
+  height:45px !important;
+  width:45px !important;
   background-color: var(--bright-orange);
   border:1px solid var(--kinda-white);
   border-radius: 50%;
   border-width: 2px;
-  color: #fcbb7e;
+  color: var(--pinky);
   
 }
-#abilities{
+#selected-at-least{
+  position: absolute;
+  top:72px;
+  left:146px;
+  width: 23px;
+  height: 10px;
+
+}
+#abilities,#calculate-card{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 10px !important;
   width:60%;
@@ -108,11 +207,7 @@ img{
   background-size: cover;
   float:right;
 }
-:root {
-  --bright-orange:#fe6a00;
-  --darker-orange:#4f2105;
-  --kinda-white: #e6e6e6;
-}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: black;
   opacity: 0.7; /* Firefox */
@@ -144,6 +239,7 @@ img{
   text-align: center !important;
   vertical-align:middle !important;
   font-size: 15px !important;
+  color: white !important;
 }
 #zoom-rate{
   padding-top: 2px;
@@ -188,8 +284,9 @@ img{
   display: block !important;
   width:100%;
   height:30px;
-  border: 1px solid black;
+  border-bottom: 2px solid black;
   position: relative;
+
 }
 .row >*{
   margin: 0;
@@ -203,21 +300,23 @@ img{
   display: flex;
   width: 100%;
   height: 200px;
-  border:2px solid yellowgreen;
 }
 #settings-window{
   height:180px;
   width:260px;
-  margin-left: 75px;
+  /* margin-left: 75px; */
 }
 #animals-window{
   height:180px;
   width:180px;
 }
+
 #food-window{
+  /* position: absolute; */
+  /* left:50%; */
   height:150px;
   width:150px;
-  margin-left: 20px;
+
 }
 .window{
   opacity: 0.9;
@@ -232,7 +331,7 @@ img{
 body {
   width:100%;
   height:100%;
-  border:2px solid salmon;
+  /* border:2px solid salmon; */
   font-family: "Lapsus Pro";
   margin:0;
   padding:0;
@@ -243,7 +342,7 @@ body {
   display: flex;
 }
 .settings_div{
-  margin-left: 180px !important;
+  /* margin-left: 180px !important; */
   display: flex;
 }
 
@@ -283,7 +382,7 @@ body {
   border-width: 3px;
 }
 .button-inside:hover{
-  color: #e6e6e6;
+  color: var(--kinda-white);
 }
 .fa-sliders{
   pointer-events: all; cursor:pointer;

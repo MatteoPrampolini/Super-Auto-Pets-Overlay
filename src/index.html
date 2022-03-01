@@ -37,18 +37,28 @@
 						</div>
 					</div>
 					<div id="abilities">
-						<p id="subtitle">Abilities:</p>
+						<p class="subtitle">Abilities:</p>
 						<p class="ability-lvl"></p>
 						<p class="ability-lvl"></p>
 						<p class="ability-lvl"></p>
 					</div>
-					<div id="calc-btn-animal">
-						<i class="fas fa-arrow-circle-right"></i>
-          </div>
-							<!-- <button id="calc-btn-animal" class="button-inside"></button> -->
+					<div id="calculate-card">
+						<input id="selected-at-least" type="number" value="1" min="1"  max="9">
+						<p class="subtitle">Get at least</p>
+						<div class="grid-container">
+							<span class="calculate-elements">Animal:</span><span id="selected-animal">None</span>
+							<span class="calculate-elements">Gold:</span><input id="selected-gold" type="number" value="10" min="1"  max="30">
+							<span class="calculate-elements">Turn:</span><input id="selected-turns" type="number" value="1" min="1" max="11">
+							<span class="calculate-elements smallest-text">Frozen animals:</span><input id="selected-animal-slots" type="number" value="0" min="0" max="5">
+							<span class="calculate-elements smaller-text">Frozen foods:</span><input id="selected-slots" type="number" value="0" min="0" max="2">
+						</div>
+						<p id="probability-lbl">0%</p>
 					</div>
-        </div>
-						<div id="food-window" class="window">
+          		</div>
+				  <div id="calc-btn-animal"><i class="fas fa-arrow-circle-right"></i></div>	
+				</div>
+			 
+			<div id="food-window" class="window">
               <div class="food-turn-row"><span>Turn 1</span><div class="foods-row"></div></div>
               <div class="food-turn-row"><span>Turn 3</span><div class="foods-row"></div></div>
               <div class="food-turn-row"><span>Turn 5</span><div class="foods-row"></div></div>
@@ -56,15 +66,23 @@
               <div class="food-turn-row"><span>Turn 9</span><div class="foods-row"></div></div>
               <div class="food-turn-row"><span>Turn 11</span><div class="foods-row"></div></div>
             </div>
-						<div id="settings-window" class="window">
-							<div class="row">
-								<p>Scale:</p>
-								<input id="zoom-slider" type="range" min="5" max="20" value="10" class="slider" />
-								<p id="zoom-rate">1.0</p>
-							</div>
-							<p id="restart_label">restart to apply changes...</p>
-						</div>
+			<div id="settings-window" class="window">
+				<div class="row">
+					<p>Scale:</p>
+					<input id="zoom-slider" type="range" min="5" max="20" value="10" class="slider" />
+					<p id="zoom-rate">1.0</p>
+				</div>
+				<div id="select-pack">
+					<div class="pack" id="pack-standard">
+							<p>STANDARD</p>
 					</div>
-					<script src="./renderer.js" defer></script>
+					<div class="pack" id="pack-expansion1">
+						<p>EXPANSION 1</p>
+					</div>
+				</div>
+				<p id="restart_label">restart to apply changes...</p>
+			</div>
+		</div>
+		<script src="./renderer.js" defer></script>
 	</body>
 </html>
