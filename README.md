@@ -1,7 +1,9 @@
-# SAP-Overlay
+
+# SAP-Overlay <img src="https://raw.githubusercontent.com/MatteoPrampolini/Super-Auto-Pets-Overlay/images/icon.ico" width="50" align="left">
 
 
-## [Download](https://github.com/MatteoPrampolini/Super-Auto-Pets-Overlay/releases/download/1.0.0/sap-overlay-1.0.0.Setup.exe)
+## [Download](https://github.com/MatteoPrampolini/Super-Auto-Pets-Overlay/releases/download/1.0.0/sap-overlay-1.0.0.Setup.exe) 
+
 **An overlay for super auto pets with animal descriptions and a probability calculator.**
 
 Made possibile with [the unofficial API](https://github.com/bencoveney/super-auto-pets-db).
